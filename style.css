@@ -8,6 +8,7 @@
   max-width: 1060px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 h2,
 h4 {
@@ -29,12 +30,13 @@ h4 {
 *header*
 *******************/
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.781)),
-    url(/image/laptop-1839876_1920.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.801)),
+    url(./image/laptop-1839876_1920.jpg);
   text-align: center;
   text-transform: uppercase;
   background-position: bottom;
   background-size: cover;
+  position: relative;
 }
 header h1 {
   font-size: 70px;
@@ -48,6 +50,13 @@ header h2 {
   margin-top: 0;
   color: white;
   padding-bottom: 80px;
+}
+header .photo img {
+  height: 200px;
+  border-radius: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 /* ****************
 *main*
