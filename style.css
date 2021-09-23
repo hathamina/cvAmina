@@ -1,0 +1,111 @@
+/* ****************
+*Global*
+*******************/
+* {
+  margin: 0;
+}
+.container {
+  max-width: 1060px;
+  display: flex;
+  justify-content: center;
+}
+h2,
+h4 {
+  text-transform: uppercase;
+  color: #ff5656;
+}
+.formation ul li h3::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background: #ff5656;
+  display: inline-block;
+
+  transform: rotate(45deg);
+  margin-right: 15px;
+}
+
+/* ****************
+*header*
+*******************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.781)),
+    url(/image/laptop-1839876_1920.jpg);
+  text-align: center;
+  text-transform: uppercase;
+  background-position: bottom;
+  background-size: cover;
+}
+header h1 {
+  font-size: 70px;
+  margin: 0;
+  color: #ff5656;
+  padding-top: 80px;
+}
+header h2 {
+  font-size: medium;
+  letter-spacing: 5px;
+  margin-top: 0;
+  color: white;
+  padding-bottom: 80px;
+}
+/* ****************
+*main*
+*******************/
+
+/* ****************
+*aside*
+*******************/
+
+aside {
+  margin: 0;
+  width: 400px;
+  background: #d6d6d6;
+  padding: 40px 30px;
+}
+
+aside .profil {
+  padding: 50px 0;
+}
+/* **************formation************ */
+aside .formation {
+  padding: 50px 0;
+}
+
+aside .formation ul li h4 {
+  font-size: 10px;
+  margin-left: 30px;
+}
+aside .formation ul li p {
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+/* ******************coordonnées**************/
+aside .coordonnee h2 {
+  padding-bottom: 15px;
+}
+aside .coordonnee ul li img {
+  width: 20px;
+  margin-right: 15px;
+}
+aside .coordonnee ul li {
+  padding: 15px;
+}
+
+/* ****************
+*article*
+*******************/
+main article {
+  margin: 80px;
+}
+main article h2 {
+  margin-bottom: 50px;
+}
+
+main article ul li {
+  margin: 50px;
+}
+
+main article ul li h4 {
+  font-size: 13px;
+}
