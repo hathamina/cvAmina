@@ -6,8 +6,6 @@
 }
 .container {
   max-width: 1060px;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
 }
 h2,
@@ -35,6 +33,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   background-position: bottom;
+
   background-size: cover;
   position: relative;
 }
@@ -42,7 +41,7 @@ header h1 {
   font-size: 70px;
   margin: 0;
   color: #ff5656;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 header h2 {
   font-size: medium;
@@ -52,10 +51,12 @@ header h2 {
   padding-bottom: 80px;
 }
 header .photo img {
-  height: 200px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
   border-radius: 200px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 20px;
 }
 /* ****************
@@ -68,7 +69,7 @@ header .photo img {
 
 aside {
   margin: 0;
-  width: 400px;
+  width: 40%;
   background: #d6d6d6;
   padding: 40px 30px;
 }
@@ -104,6 +105,12 @@ aside .coordonnee ul li {
 /* ****************
 *article*
 *******************/
+main .container {
+  max-width: 1060px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
 main article {
   margin: 80px;
 }
