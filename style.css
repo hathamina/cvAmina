@@ -7,6 +7,10 @@
 .container {
   max-width: 1060px;
   margin: 0 auto;
+  justify-content: center;
+}
+h1 {
+  font-size: larger;
 }
 h2,
 h4 {
@@ -23,7 +27,6 @@ h4 {
   transform: rotate(45deg);
   margin-right: 15px;
 }
-
 /* ****************
 *header*
 *******************/
@@ -36,12 +39,12 @@ header {
 
   background-size: cover;
   position: relative;
+  padding: 80px;
 }
 header h1 {
   font-size: 70px;
   margin: 0;
   color: #ff5656;
-  padding-top: 150px;
 }
 header h2 {
   font-size: medium;
@@ -50,37 +53,32 @@ header h2 {
   color: white;
   padding-bottom: 80px;
 }
-header .photo img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 200px;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-}
+
 /* ****************
 *main*
 *******************/
 
 /* ****************
-*aside*
+*aside global*
 *******************/
-
 aside {
   margin: 0;
   width: 40%;
   background: #d6d6d6;
   padding: 40px 30px;
 }
+aside .profil,
+aside .formation,
+aside .coordonnee {
+  padding: 50px 0;
+}
+aside .profil h2,
+aside .formation h2,
+aside .coordonnee h2 {
+  padding-bottom: 30px;
+}
 
-aside .profil {
-  padding: 50px 0;
-}
 /* **************formation************ */
-aside .formation {
-  padding: 50px 0;
-}
 
 aside .formation ul li h4 {
   font-size: 10px;
@@ -90,38 +88,60 @@ aside .formation ul li p {
   margin-left: 25px;
   margin-bottom: 40px;
 }
+
 /* ******************coordonnées**************/
-aside .coordonnee h2 {
-  padding-bottom: 15px;
-}
-aside .coordonnee ul li img {
-  width: 20px;
-  margin-right: 15px;
-}
+
 aside .coordonnee ul li {
   padding: 15px;
 }
-
+aside .coordonnee ul li i {
+  color: #ff5656;
+  padding-right: 20px;
+}
 /* ****************
-*article*
+*experience pro
 *******************/
 main .container {
-  max-width: 1060px;
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
 }
-main article {
-  margin: 80px;
+main .container .experiencePro {
+  padding: 80px;
 }
-main article h2 {
-  margin-bottom: 50px;
+main .container .experiencePro h2 {
+  padding-bottom: 50px;
 }
-
-main article ul li {
-  margin: 50px;
+.formation ul li h4 {
+  padding: 0 30px;
 }
 
-main article ul li h4 {
+main .container .experiencePro p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ******************competence************** */
+
+main .competence div p::before {
+  content: " ";
+  background: #ff5656;
+  height: 100px;
+  width: 30px;
+  display: inline-block;
+  margin: 30px;
+}
+
+main .competence div {
+  display: flex;
+  padding: 20px 0;
+  margin-top: 30px;
+  border: solid 2px gray;
+  border-right: none;
+  border-top: none;
+  text-align: center;
+}
+main .competence div p {
   font-size: 13px;
+}
+main .competence h2 {
+  padding-top: 30px;
 }
